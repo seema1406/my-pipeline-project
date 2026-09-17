@@ -15,7 +15,8 @@ jobs:
 
       - name: Check Project Files
         run: ls -la
-
+      - name: Build Docker Image
+        run: docker build -t my-pipeline-app .
       - name: Build
         run: echo "Build successful"
 
