@@ -17,8 +17,7 @@ jobs:
         run: ls -la
       - name: Build Docker Image
         run: docker build -t my-pipeline-app .
-      - name: Build
-        run: echo "Build successful"
+      
 
       - name: Test
         run: echo "Tests passed"
